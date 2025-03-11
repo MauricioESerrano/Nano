@@ -1,0 +1,23 @@
+<ProcessContext>
+	<!-- ProcessContext -->
+	<Location>
+		<!-- Location -->
+		<Equipment name="{{ tool_id }}" />
+		<Module name="{{ module }}" />
+	</Location>
+	<Process>
+		<!-- Process -->
+		<ProcessTime />
+		<ControlJobName name="NA" />
+		<ProcessJobName name="NA" />
+		<Recipe module="{{ recipe_name }}" />
+	</Process>
+	<Material materialName="{{ material_id }}">
+	<!-- Material -->
+		<Lot name="{{ lot_id }}" product="NA" technology="NA" operation="NA" route="NA" stage="NA" layer="{{ current_user }}">
+			<Wafers>
+				<Wafer name="{{ wafer_id }}" carrierSlot="0" ></Wafer>
+			</Wafers>
+		</Lot>
+	</Material>
+</ProcessContext>
